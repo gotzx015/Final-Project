@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Median Home Prices</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+    
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">               
+            <a class="navbar-brand" href="/" >HOME</a>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">    
+                    <li class="nav-item">
+                        <a class="nav-link" href ="/map">HOUSING PRICE MAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/visualizations">VISUALIZATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predictions">PREDICTIONS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container content-wrapper">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src= "../static/images/housing_market.jpg" width="50%">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="data">
+                    <h3 class="header">Data Sources</h3>
+                    <li><a href=" https://www.zillow.com/research/data/ ">Housing Data - Zillow Research<i class="fas fa-external-link-alt"></i></a></li>
+                </div>   
+            </div>
+        </div>
+
+        <div class="col-md-12">
+           <h3 class="header">Median Household Prices in the United States</h3>
+            <p>The housing market represents the market for properties being purchased and sold either directly to buyers or through real estate brokers where some of the major factors involved in 
+                household prices are economic change, supply and demand, mortgage interest rates, location, and government laws. The housing market is subject to the same economic laws of supply and 
+                demand as every other industry. When there are more buyers than sellers, the supply of houses goes down and the demand goes up, making houses harder to buy and more expensive. The 
+                typical home value of homes in the United States in 2021 is $298,933. This value is seasonally adjusted and only includes the middle price tier of homes. United States home values 
+                have gone up 16.7% over the past year and Zillow predicts they will rise 12.1% in the next year.</p>
+            <br>
+            <p>Our website displays analysis on the previous 10 years of housing market data (2010-2020) and looks into predictions of the next 10 years. We wanted to answer these questions:</p>
+            <p>How have household prices reacted over the past decade?</p>
+            <p>Which states have the highest household prices?</p>
+            <p>Which states and cities have the highest growth rate?</p>
+            <p>What median home prices could you expect over the next 10 years?</p>
+            <p>Are there obvious factors/correlation?</p>
+            <br>
+            <p>Our housing price map page displays a heatmap of the aggregated state median home price from 2010-2020. The goal of this page is to determine which states have been the most and least expensive
+                place to live over the past decade. We also have an option to display the predicted state median home prices for the years 2021, 2025, and 2030.
+            </p>
+            <p>The visualizations page displays analysis on cities as well as states. Our first chart shows our aggregated state data that is used in the heatmap. We then have two drop down menus, so that a user 
+                can see a bar chart on a state or city they choose. Our data includes the most notable cities for each state. This is approximately 100 of the highest populated cities for most states. Above the 
+                bar charts we included an average annual growth rate for the selected state/city.
+            </p>
+            <p>
+                Our predictions page has line charts that display estimated future housing prices for the same states and cities you can select on the visualizations page. This data comes from a Machine Learning
+                Model we created using the historical Zillow data. The red points represent predicted data and blue points represent actual data.
+            </p>
+        </div>
+    </div>
+
+    
+    <footer class="footer font-small footer-dark">
+        <div class="footer-copyright text-center py-1">© Copyright Data Analytics Bootcamp 2021</div>      
+    </footer>
+
+</body>
+</html>
